@@ -24,7 +24,7 @@ public class LinkedList
         else
         {
             Node node = list.head;
-            while(node.next != null)
+            while(node != null)
             {
                 size = size + 1;
                 node = node.next;
@@ -58,7 +58,7 @@ public class LinkedList
         {
             Node new_node = new Node(data);
             Node node = list.head;
-            while(node.next != null)
+            while(node != null)
             {
                 if(node.data == posvalue)
                 {
@@ -115,6 +115,8 @@ public class LinkedList
         insertAfter(list,5,7);
         System.out.println("Printing List");
         printlist(list);
+        System.out.println("List Size");
+        System.out.println(size(list));
         
     }
      
