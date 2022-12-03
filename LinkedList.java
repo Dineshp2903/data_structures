@@ -1,13 +1,17 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
 public class LinkedList
 {
     Node head ;
     static class Node
     {
         public int data ;
+        public Node next;
         public Node(int data)
         {
             this.data = data;
-            this.node = null;
+            this.next = null;
         }
         
     }
@@ -27,6 +31,7 @@ public class LinkedList
                 last = last.next;
             }
             last.next = new_node;
+        }
     }
         
     public static void printlist(LinkedList list)
@@ -34,7 +39,7 @@ public class LinkedList
         Node node = list.head;
         while(node.next != null)
         {
-            System.out.println(node.val);
+            System.out.println(node.data);
             node = node.next;
         }
     }
@@ -50,13 +55,9 @@ public class LinkedList
         insertlast(list,4);
         insertlast(list,5);
         insertlast(list,6);
-        System.out.print("Printing List");
+        System.out.println("Printing List");
         printlist(list);
         
-        
-        
-        
-        
     }
-        
-}
+     
+}  
