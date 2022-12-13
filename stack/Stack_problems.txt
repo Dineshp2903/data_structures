@@ -1,0 +1,9 @@
+List of interesting problems in Stack
+1. How to create mergeable stack?
+2. Infix to Prefix
+3. Infix to postfix
+4. prefix to infix
+5. prefix to postfix
+6. postfix to infix
+7. postfix to prefix
+Links : https://www.geeksforgeeks.org/stack-data-structure/?utm_source=newgfgui&utm_medium=dsa&utm_campaign=newhomepage
