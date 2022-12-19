@@ -33,6 +33,28 @@ public class Sorting {
 		}
 		return arr;
 	}
+	public static int[] bubble_sort(int[] arr)
+	{
+		/*
+		 * 
+		 * Time Complexity: The time complexity of Selection Sort is O(N2)
+		 * Auxiliary Space: O(1)
+		 */
+		for(int i = 0; i<arr.length;i++)
+		{
+			for(int j = i+1;j<arr.length;j++)
+			{
+				if(arr[i] > arr[j])
+				{
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+		return arr;
+		
+	}
 	
 	public static void printarr(int[] arr)
 	{
@@ -47,6 +69,7 @@ public class Sorting {
 		
 		int arr[] = {64,25,12,22,11};
 		arr = selection_sort(arr);
+		arr = bubble_sort(arr);
 		printarr(arr);
 		
 
