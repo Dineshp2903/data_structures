@@ -1,0 +1,42 @@
+package javamine;
+
+import java.util.Stack;
+
+public class Stack_INorder {
+	
+	
+	public static void inOrder(Node root)
+	{
+		if(root == null)
+		{
+			return ;
+		}
+		Node curr = root;
+		Stack<Node> stack = new Stack<Node>();
+		while(curr != null || stack.size() > 0)
+		{
+			while(curr!= null)
+			{
+				stack.add(curr);
+				curr = curr.left;
+			}
+			Node s = stack.pop();
+			System.out.print(s.data+"  ");
+			curr = s.right;
+			
+		}
+	}
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Node root = Common.getNodes();
+		inOrder(root);
+
+	}
+
+}
